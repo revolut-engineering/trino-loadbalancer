@@ -1,0 +1,10 @@
+health_check:
+    status: true
+    period: 1
+proxy:
+    port: 8080
+backends:
+    - name: main
+      url: http://localhost:8081/
+    - name: secondary
+      url: http://localhost:8082/
